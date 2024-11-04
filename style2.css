@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Haunted Mansion Section */
+.haunted-mansion-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.haunted-mansion-section img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.haunted-mansion-info h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.haunted-mansion-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* App Promotion Section */
+.app-promo {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-promo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Magic Ceremony Section */
+.magic-ceremony {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#magicButton {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#magicButton:hover {
+    background-color: #c9302c;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+#magicResult {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#characterImage {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 20px auto 0; /* Adds space above the image */
+    display: block;
+    animation: appear 1s ease-in-out;
+}
+
+/* Reward Message */
+#rewardMessage {
+    font-size: 1.3em;
+    color: #ff6f61;
+    margin-top: 10px;
+}
+
+/* Appear Animation */
+@keyframes appear {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+
+    #magicButton {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .haunted-mansion-info h2 {
+        font-size: 1.5em;
+    }
+
+    .haunted-mansion-info p {
+        font-size: 0.9em;
+    }
+}
